@@ -29,9 +29,8 @@ public class SecondActivity extends AppCompatActivity {
         appel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Uri uri = Uri.parse("http://www.univ-nantes.fr ");
-               // Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-               // startActivity(intent);
+                Intent intent = new Intent(SecondActivity.this, AppelActivity.class);
+                startActivity(intent);
             }
 
         });
