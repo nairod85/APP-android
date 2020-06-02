@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="62dp"
         android:gravity="center|center_horizontal|center_vertical"
-        android:text="@string/txtNum"
+        android:text="@string/numero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

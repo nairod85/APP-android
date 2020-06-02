@@ -6,4 +6,8 @@
     <string name="settings">Settings</string>
     <string name="activities">Activities</string>
     <string name="home">Home</string>
+    <string name="txtNum">txtNum</string>
+    <string name="appeler">appeler</string>
+    <string name="envoyer_sms">envoyer_sms</string>
+    <string name="numero">Numéro</string>
 </resources>
