@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.activity:
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class );
-                startActivity(intent );
+                startActivity(intent);
                 return true;
             case R.id.setting:
                 Toast.makeText(this, "Settings selected", Toast.LENGTH_LONG).show();
