@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,24 +60,42 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
-
         });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate( R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch ( item.getItemId() ) {
-            case R.id.burgerMenu:
-                drawerLayout.openDrawer(Gravity.RIGHT);
+        switch (item.getItemId()) {
+            case R.id.activity:
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class );
+                startActivity(intent );
+                return true;
+            case R.id.setting:
+                Toast.makeText(this, "Settings selected", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.home:
+                Intent intent2 = new Intent(Intent.ACTION_MAIN);
+                intent2.addCategory(Intent.CATEGORY_HOME);
+                startActivity(intent2);
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-    }
+
+
+}
+
+}
+
+
+
+
+
+
