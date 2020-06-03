@@ -20,4 +20,14 @@
     <string name="Valeur_X">Valeur_X</string>
     <string name="Valeur_Y">Valeur_Y</string>
     <string name="Background">Compass</string>
+    <string name="icone_phone">Icone Phone</string>
+    <string name="image_localisation">Image Localisation</string>
+    <string name="image_torche">Image Torche</string>
+    <string name="image_son">Image Son</string>
+    <string name="image_niveau">Image Niveau</string>
+    <string name="txt_Localisation">Géo-Localisation</string>
+    <string name="txt_enceinte">Détecteur de Son</string>
+    <string name="txt_niveau">Niveau d\'Artisant</string>
+    <string name="txt_torche">Lampe Torche</string>
+    <string name="txt_appel">Envoi de SMS/Appels</string>
 </resources>

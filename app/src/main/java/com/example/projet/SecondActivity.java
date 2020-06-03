@@ -45,7 +45,7 @@ public class SecondActivity extends AppCompatActivity {
 
         });
 
-        lampetorche = (ImageButton) findViewById(R.id.btnniveau);
+        lampetorche = (ImageButton) findViewById(R.id.btnlampe);
         lampetorche.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +54,7 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        niveau = (ImageButton) findViewById(R.id.btnlampe);
+        niveau = (ImageButton) findViewById(R.id.btnniveau);
         niveau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

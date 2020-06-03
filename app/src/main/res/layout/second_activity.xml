@@ -52,62 +52,124 @@
 
             <ImageButton
                 android:id="@+id/btnappel"
-                android:layout_width="226dp"
-                android:layout_height="200dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginLeft="12dp"
-                app:layout_constraintEnd_toStartOf="@+id/btnlocalisation"
+                android:layout_width="122dp"
+                android:layout_height="127dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/icone_phone"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/appel" />
 
             <ImageButton
                 android:id="@+id/btnlocalisation"
-                android:layout_width="173dp"
-                android:layout_height="224dp"
+                android:layout_width="117dp"
+                android:layout_height="144dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="170dp"
+                android:contentDescription="@string/image_localisation"
+                app:layout_constraintBottom_toTopOf="@+id/btnenceinte"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnappel"
-                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/localisation" />
 
             <ImageButton
                 android:id="@+id/btnlampe"
-                android:layout_width="169dp"
-                android:layout_height="168dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="34dp"
-                android:layout_marginEnd="11dp"
-                android:layout_marginRight="11dp"
-                app:layout_constraintEnd_toStartOf="@+id/btnenceinte"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="315dp"
+                android:contentDescription="@string/image_torche"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnappel"
                 app:srcCompat="@drawable/lampetorche" />
 
             <ImageButton
                 android:id="@+id/btnenceinte"
-                android:layout_width="219dp"
-                android:layout_height="205dp"
-                android:layout_marginStart="11dp"
-                android:layout_marginLeft="11dp"
-                android:layout_marginTop="75dp"
+                android:layout_width="129dp"
+                android:layout_height="123dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="150dp"
+                android:contentDescription="@string/image_son"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btnlampe"
-                app:layout_constraintTop_toBottomOf="@+id/btnlocalisation"
                 app:srcCompat="@drawable/enceinte" />
 
             <ImageButton
                 android:id="@+id/btnniveau"
-                android:layout_width="208dp"
-                android:layout_height="147dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="198dp"
-                android:layout_marginRight="198dp"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="120dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:contentDescription="@string/image_niveau"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnenceinte"
                 app:srcCompat="@drawable/niveau" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/txt_niveau"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="200dp"
+                android:text="@string/txt_enceinte"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="360dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/txt_torche"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="222dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="220dp"
+                android:text="@string/txt_Localisation"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/txt_appel"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </view>

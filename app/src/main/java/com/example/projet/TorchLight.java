@@ -67,7 +67,12 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
-        if(sensorEvent.sensor.getType() == Sensor.TYPE_ACCELEROMETER){
+
+        if(sensorEvent.sensor.getType() == Sensor.TYPE_LIGHT){
+            LightValue = sensorEvent.values[0];
+            TauxLux.setText("Taux de Lumière : " + sensorEvent.values[0] + " Lux");
+        }
+        else if(sensorEvent.sensor.getType() == Sensor.TYPE_ACCELEROMETER){
 
             float instantT_X = sensorEvent.values[0];
             float instantT_Y = sensorEvent.values[1];
@@ -105,10 +110,7 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
             dernier_Z = instantT_Z;
             PasPremiereFois = true;
         }
-        else if(sensorEvent.sensor.getType() == Sensor.TYPE_LIGHT){
-            LightValue = sensorEvent.values[0];
-            //TauxLux.setText("Taux de Lumière : " + sensorEvent.values[0] + " Lux");
-        }
+
 
     }
 
