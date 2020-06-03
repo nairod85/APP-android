@@ -51,8 +51,8 @@ public class SecondActivity extends AppCompatActivity {
         lampetorche.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(SecondActivity.this, TorchLight.class);
-//                startActivity(intent);
+                Intent intent = new Intent(SecondActivity.this, TorchLight.class);
+                startActivity(intent);
             }
 
         });
