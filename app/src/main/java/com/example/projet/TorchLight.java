@@ -17,6 +17,7 @@ import android.widget.TextView;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class TorchLight extends AppCompatActivity implements SensorEventListener {
 
     private ImageView OnOff;
@@ -41,7 +42,7 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.torch_light);
 
         OnOff = findViewById(R.id.ImageOnOff);
         TauxLux = findViewById(R.id.TauxLux);
@@ -130,13 +131,16 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void flashLightOn() {
         CameraManager cameraManager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
 
         try {
             assert cameraManager != null;
             String cameraId = cameraManager.getCameraIdList()[0];
-            cameraManager.setTorchMode(cameraId, true);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                cameraManager.setTorchMode(cameraId, true);
+            }
             flashLightStatus = true;
             OnOff.setImageResource(R.drawable.on_icon);
         } catch (CameraAccessException ignored) {
@@ -149,7 +153,9 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
         try {
             assert cameraManager != null;
             String cameraId = cameraManager.getCameraIdList()[0];
-            cameraManager.setTorchMode(cameraId, false);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                cameraManager.setTorchMode(cameraId, false);
+            }
             flashLightStatus = false;
             OnOff.setImageResource(R.drawable.off_icon);
         } catch (CameraAccessException ignored) {

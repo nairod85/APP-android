@@ -30,7 +30,7 @@ public class NiveauArtisant extends AppCompatActivity implements SensorEventList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.niveau_artisant);
 
         xText_Degree = findViewById( R.id.xText_Degree );
         yText_Degree = findViewById( R.id.yText_Degree );
