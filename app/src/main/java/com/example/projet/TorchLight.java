@@ -58,7 +58,7 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
 
         Sensor mLight = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         if(mLight != null){
-            sensorManager.registerListener(TorchLight.this, mLight, SensorManager.SENSOR_DELAY_NORMAL);
+            sensorManager.registerListener(com.example.projet.TorchLight.this, mLight, SensorManager.SENSOR_DELAY_NORMAL);
         }
     }
 
@@ -66,11 +66,7 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
-        if(sensorEvent.sensor.getType() == Sensor.TYPE_LIGHT){
-            LightValue = sensorEvent.values[0];
-            TauxLux.setText("Taux de Lumière : " + sensorEvent.values[0] + " Lux");
-        }
-        else if(sensorEvent.sensor.getType() == Sensor.TYPE_ACCELEROMETER){
+        if(sensorEvent.sensor.getType() == Sensor.TYPE_ACCELEROMETER){
 
             float instantT_X = sensorEvent.values[0];
             float instantT_Y = sensorEvent.values[1];
@@ -108,6 +104,10 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
             dernier_Z = instantT_Z;
             PasPremiereFois = true;
         }
+        else if(sensorEvent.sensor.getType() == Sensor.TYPE_LIGHT){
+            LightValue = sensorEvent.values[0];
+            //TauxLux.setText("Taux de Lumière : " + sensorEvent.values[0] + " Lux");
+        }
 
     }
 
@@ -119,14 +119,14 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
     @Override
     protected void onPause() {
         super.onPause();
-        sensorManager.unregisterListener( this );
+        sensorManager.unregisterListener(com.example.projet.TorchLight.this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         if (AccelerometreDispo) {
-            sensorManager.registerListener( this, accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL );
+            sensorManager.registerListener( com.example.projet.TorchLight.this, accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL );
         }
     }
 
@@ -143,9 +143,9 @@ public class TorchLight extends AppCompatActivity implements SensorEventListener
         }
     }
 
+
     private void flashLightOff() {
         CameraManager cameraManager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
-
         try {
             assert cameraManager != null;
             String cameraId = cameraManager.getCameraIdList()[0];

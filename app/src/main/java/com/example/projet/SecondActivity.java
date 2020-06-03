@@ -35,7 +35,6 @@ public class SecondActivity extends AppCompatActivity {
 
         });
 
-
         localisation = (ImageButton) findViewById(R.id.btnlocalisation);
         localisation.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,14 +56,14 @@ public class SecondActivity extends AppCompatActivity {
 
         });
 
-        niveau = (ImageButton) findViewById(R.id.btnniveau);
-        niveau.setOnClickListener(new View.OnClickListener() {
+        lampetorche = (ImageButton) findViewById(R.id.btnlampe);
+        lampetorche.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Uri uri = Uri.parse("http://www.webmail-etu.univ-nantes.fr");
-                // Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                // startActivity(intent);
+                Intent intent = new Intent(SecondActivity.this, NiveauArtisant.class);
+                startActivity(intent);
             }
+
         });
 
         enceinte = (ImageButton) findViewById(R.id.btnenceinte);

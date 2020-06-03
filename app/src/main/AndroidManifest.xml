@@ -17,8 +17,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TorchLight"></activity>
+
         <activity android:name=".ActivitySMS"></activity>
+        <activity android:name=".TorchLight"></activity>
+        <activity android:name=".NiveauArtisant"></activity>
         <activity android:name=".AppelActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity">
