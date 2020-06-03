@@ -10,11 +10,4 @@
     <string name="appeler">appeler</string>
     <string name="envoyer_sms">envoyer_sms</string>
     <string name="numero">Numéro</string>
-    <string name="Valeur_X">Valeur de X</string>
-    <string name="Valeur_Y">Valeur de Y</string>
-    <string name="Valeur_Z">Valeur de Z</string>
-    <string name="lux">lux</string>
-    <string name="imageonoff">ImageOnOff</string>
-    <string name="TextInfo">La lampe torche s\'allumera si la lumière est inférieure à 50lux et s\'éteignera uniquement si supérieur à 50lux.
-        \n Vous devez secouez votre téléphone pour allumer/éteindre.</string>
 </resources>
