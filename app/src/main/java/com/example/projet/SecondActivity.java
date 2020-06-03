@@ -32,7 +32,6 @@ public class SecondActivity extends AppCompatActivity {
                 Intent intent = new Intent(SecondActivity.this, AppelActivity.class);
                 startActivity(intent);
             }
-
         });
 
         localisation = (ImageButton) findViewById(R.id.btnlocalisation);
@@ -46,24 +45,22 @@ public class SecondActivity extends AppCompatActivity {
 
         });
 
-        lampetorche = (ImageButton) findViewById(R.id.btnlampe);
+        lampetorche = (ImageButton) findViewById(R.id.btnniveau);
         lampetorche.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SecondActivity.this, TorchLight.class);
                 startActivity(intent);
             }
-
         });
 
-        lampetorche = (ImageButton) findViewById(R.id.btnlampe);
-        lampetorche.setOnClickListener(new View.OnClickListener() {
+        niveau = (ImageButton) findViewById(R.id.btnlampe);
+        niveau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SecondActivity.this, NiveauArtisant.class);
                 startActivity(intent);
             }
-
         });
 
         enceinte = (ImageButton) findViewById(R.id.btnenceinte);
@@ -76,6 +73,4 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }
