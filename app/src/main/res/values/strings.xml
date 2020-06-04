@@ -39,4 +39,7 @@
     <string name="Valeur_X">Valeur_X</string>
     <string name="Valeur_Y">Valeur_Y</string>
     <string name="Background">Compass</string>
+    <string name="logogit">logoGit</string>
+    <string name="logomail">logoMail</string>
+    <string name="logouniv">LogoUniv</string>
 </resources>
