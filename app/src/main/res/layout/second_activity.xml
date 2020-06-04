@@ -61,6 +61,8 @@
                 android:contentDescription="@string/icone_phone"
                 android:scaleX="0.85"
                 android:scaleY="0.85"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/appel" />
@@ -103,13 +105,15 @@
                 android:layout_height="123dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
-                android:layout_marginBottom="150dp"
+                android:layout_marginBottom="148dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/image_son"
                 android:scaleX="1.1"
                 android:scaleY="1.1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/enceinte" />
 
             <ImageButton
@@ -124,6 +128,8 @@
                 android:scaleX="1.25"
                 android:scaleY="1.25"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/niveau" />
 
@@ -137,7 +143,9 @@
                 android:text="@string/txt_niveau"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -145,21 +153,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="56dp"
                 android:layout_marginLeft="56dp"
-                android:layout_marginBottom="200dp"
+                android:layout_marginBottom="192dp"
                 android:text="@string/txt_enceinte"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="348dp"
                 android:layout_marginEnd="60dp"
                 android:layout_marginRight="60dp"
                 android:text="@string/txt_torche"
                 android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -172,6 +182,8 @@
                 android:layout_marginTop="216dp"
                 android:text="@string/txt_Localisation"
                 android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -185,6 +197,8 @@
                 android:text="@string/txt_appel"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.982"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
