@@ -24,11 +24,11 @@
     <Button
         android:id="@+id/TauxLux"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="100px"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp"
-        android:textSize="25px" />
+        android:textSize="60px" />
 
     <TextView
         android:id="@+id/textView"
@@ -38,6 +38,6 @@
         android:layout_marginBottom="40dp"
         android:gravity="center"
         android:text="@string/TextInfo"
-        android:textSize="20sp"/>
+        android:textSize="50px" />
 
 </RelativeLayout>
