@@ -96,8 +96,7 @@ public class SecondActivity extends AppCompatActivity {
                 Toast.makeText(this, "Settings selected", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.home:
-                Intent intent2 = new Intent(Intent.ACTION_MAIN);
-                intent2.addCategory(Intent.CATEGORY_HOME);
+                Intent intent2 = new Intent(SecondActivity.this, MainActivity.class );
                 startActivity(intent2);
                 return true;
 
