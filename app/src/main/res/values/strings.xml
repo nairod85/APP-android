@@ -42,4 +42,9 @@
     <string name="logogit">logoGit</string>
     <string name="logomail">logoMail</string>
     <string name="logouniv">LogoUniv</string>
+
+    //Partie localisation
+    <string name="LocationDisplay"> Location display </string>
+    <string name="GetLocation" > Addresse </string>
+
 </resources>
