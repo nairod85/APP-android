@@ -17,7 +17,7 @@
     <string name="txt_enceinte">Détecteur de Son</string>
     <string name="txt_niveau">Niveau d\'Artisant</string>
     <string name="txt_torche">Lampe Torche</string>
-    <string name="txt_appel">Envoi de SMS/Appels</string>
+    <string name="txt_appel">SMS/Appels</string>
 
 
     //Partie Appel
@@ -26,11 +26,12 @@
     <string name="envoyer_sms">envoyer_sms</string>
     <string name="numero">Numéro</string>
 
-    //Partie Torche
 
+    //Partie Torche
     <string name="imageonoff">onOff</string>
     <string name="TextInfo">La lampe torche s\'allumera si la lumière est inférieure à 50lux et s\'éteignera uniquement si supérieur à 50lux.
         \n Vous devez secouez votre téléphone pour allumer/éteindre.</string>
+
 
     //Partie Niveau
     <string name="valueX">Value</string>
