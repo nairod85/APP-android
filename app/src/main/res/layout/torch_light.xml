@@ -28,7 +28,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="61dp"
-        android:textSize="15pt" />
+        android:textSize="25px" />
 
     <TextView
         android:id="@+id/textView"
