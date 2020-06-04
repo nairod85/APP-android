@@ -3,9 +3,13 @@ package com.example.projet;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -72,5 +76,32 @@ public class SecondActivity extends AppCompatActivity {
                 // startActivity(intent);
             }
         });
+
+
     }
-}
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.activity:
+                Intent intent = new Intent(SecondActivity.this, SecondActivity.class );
+                startActivity(intent);
+                return true;
+            case R.id.setting:
+                Toast.makeText(this, "Settings selected", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.home:
+                Intent intent2 = new Intent(Intent.ACTION_MAIN);
+                intent2.addCategory(Intent.CATEGORY_HOME);
+                startActivity(intent2);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+}}
