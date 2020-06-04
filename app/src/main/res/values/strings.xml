@@ -29,7 +29,7 @@
 
     //Partie Torche
     <string name="imageonoff">onOff</string>
-    <string name="TextInfo">La lampe torche s\'allumera si la lumière est inférieure à 50lux et s\'éteignera uniquement si supérieur à 50lux.
+    <string name="TextInfo">La lampe torche s\'allumera si la lumière est inférieure à 50lux et s\'éteindra uniquement si supérieur à 50lux.
         \n Vous devez secouez votre téléphone pour allumer/éteindre.</string>
 
 
