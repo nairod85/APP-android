@@ -32,7 +32,14 @@
     <string name="TextInfo">La lampe torche s\'allumera si la lumière est inférieure à 50lux et s\'éteindra uniquement si supérieur à 50lux.
         \n Vous devez secouez votre téléphone pour allumer/éteindre.</string>
 
-
+    //partie Settings
+    <string name="title_settings">Liste des différentes permissions nécéssaires au bon focntionnement de l\'application</string>
+    <string name="subtitle">Appuyer sur les boutons pour les activer ou lesdésactiver</string>
+    <string name="appels_t_l_phonique">Appels téléphonique</string>
+    <string name="appel_t_lephonique">Appel Télephonique</string>
+    <string name="lire_sms">SMS</string>
+    <string name="camera">Camera</string>
+    
     //Partie Niveau
     <string name="valueX">Value</string>
     <string name="valueY">Value</string>

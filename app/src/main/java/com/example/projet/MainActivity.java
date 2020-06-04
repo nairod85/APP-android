@@ -78,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.setting:
                 Toast.makeText(this, "Settings selected", Toast.LENGTH_LONG).show();
+                Intent intent3 = new Intent(MainActivity.this, Setting.class );
+                startActivity(intent3);
                 return true;
             case R.id.home:
                 Intent intent2 = new Intent(Intent.ACTION_MAIN);
