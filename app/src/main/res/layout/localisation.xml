@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,8 +11,7 @@
         android:id="@+id/map"
         class="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.projet.Localisation" />
+        android:layout_height="match_parent"/>
 
     <TextView
         android:id="@+id/textView"
@@ -21,7 +19,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="550dp"
-        android:text="@string/LocationDisplay" />
+        android:text="@string/LocationDisplay"
+        android:layout_marginLeft="50dp" />
 
     <Button
         android:id="@+id/button"
